@@ -7,7 +7,7 @@ def lemons(action='/result'):
     title_var = "My Ice Cream Form"
     # Add code -- what type should options hold?
     options = ['Chocolate', 'Vanilla', 'Superman', 'Pistachio', 'Butter Pecan', 'Many More :)']
-    return render_template('seeform.html',title=title_var, lst_stuff=options, plants='/apples')
+    return render_template('seeform.html',title=title_var, lst_stuff=options)
 
 @app.route('/apples',methods=['GET','POST'])
 def plants():
